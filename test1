@@ -1,0 +1,107 @@
+@prefix nbam: <http://nbamovements.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://nbamovements.com/resource/match/0021400001> a nbam:Match ;
+	nbam:date "Tue Oct 28 00:00:00 CET 2014"^^xsd:date .
+
+<http://NBAMovements.com/resource/movement/00214000010> nbam:has_a_duration "Tue Oct 28 00:12:00 CET 2014"^^xsd:dateTime ;
+	<http://NBAMovements.com/name> "start of period" ;
+	<http://NBAMovements.com/is_made> <http://nbamovements.com/resource/match/0021400001> ;
+	nbam:points_away_movement "0"^^xsd:int ;
+	nbam:point_home_movement "0"^^xsd:int .
+
+<http://NBAMovements.com/resource/sportsTeam/nop> a nbam:Team .
+
+<http://nbamovements.com/resource/match/0021400001> nbam:participant <http://NBAMovements.com/resource/sportsTeam/nop> .
+
+<http://NBAMovements.com/resource/person/player/anthony-davis> a nbam:Player ;
+	foaf:name "Anthony Davis" ;
+	nbam:realizes_a "jump ball" ;
+	nbam:plays_in <http://NBAMovements.com/resource/sportsTeam/nop> ;
+	nbam:plays_a <http://nbamovements.com/resource/match/0021400001> .
+
+<http://NBAMovements.com/resource/movement/00214000011> nbam:has_a_duration "Tue Oct 28 00:12:00 CET 2014"^^xsd:dateTime ;
+	<http://NBAMovements.com/name> "jump ball" ;
+	nbam:is_made_by <http://NBAMovements.com/resource/person/player/anthony-davis> ;
+	<http://NBAMovements.com/is_made> <http://nbamovements.com/resource/match/0021400001> ;
+	nbam:points_away_movement "0"^^xsd:int ;
+	nbam:point_home_movement "0"^^xsd:int .
+
+<http://NBAMovements.com/resource/person/player/anthony-davis> nbam:realizes_a "miss" .
+
+<http://NBAMovements.com/resource/movement/00214000012> nbam:distance "20"^^xsd:int ;
+	nbam:has_a_duration "Tue Oct 28 00:11:43 CET 2014"^^xsd:dateTime ;
+	<http://NBAMovements.com/name> "miss" ;
+	nbam:is_made_by <http://NBAMovements.com/resource/person/player/anthony-davis> ;
+	<http://NBAMovements.com/is_made> <http://nbamovements.com/resource/match/0021400001> ;
+	nbam:points_away_movement "0"^^xsd:int ;
+	nbam:point_home_movement "0"^^xsd:int ;
+	nbam:result "missed" .
+
+<http://NBAMovements.com/resource/sportsTeam/orl> a nbam:Team .
+
+<http://nbamovements.com/resource/match/0021400001> nbam:participant <http://NBAMovements.com/resource/sportsTeam/orl> .
+
+<http://NBAMovements.com/resource/person/player/evan-fournier> a nbam:Player ;
+	foaf:name "Evan Fournier" ;
+	nbam:realizes_a "rebound" ;
+	nbam:plays_in <http://NBAMovements.com/resource/sportsTeam/orl> ;
+	nbam:plays_a <http://nbamovements.com/resource/match/0021400001> .
+
+<http://NBAMovements.com/resource/movement/00214000013> nbam:has_a_duration "Tue Oct 28 00:11:42 CET 2014"^^xsd:dateTime ;
+	<http://NBAMovements.com/name> "rebound" ;
+	nbam:is_made_by <http://NBAMovements.com/resource/person/player/evan-fournier> ;
+	<http://NBAMovements.com/is_made> <http://nbamovements.com/resource/match/0021400001> ;
+	nbam:points_away_movement "0"^^xsd:int ;
+	nbam:point_home_movement "0"^^xsd:int .
+
+<http://NBAMovements.com/resource/person/player/nikola-vucevic> a nbam:Player ;
+	foaf:name "Nikola Vucevic" ;
+	nbam:realizes_a "shot" ;
+	nbam:plays_in <http://NBAMovements.com/resource/sportsTeam/orl> ;
+	nbam:plays_a <http://nbamovements.com/resource/match/0021400001> .
+
+<http://NBAMovements.com/resource/movement/00214000014> nbam:distance "19"^^xsd:int ;
+	nbam:has_a_duration "Tue Oct 28 00:11:31 CET 2014"^^xsd:dateTime ;
+	<http://NBAMovements.com/name> "shot" ;
+	nbam:is_made_by <http://NBAMovements.com/resource/person/player/nikola-vucevic> ;
+	<http://NBAMovements.com/is_made> <http://nbamovements.com/resource/match/0021400001> ;
+	nbam:points_away_movement "2"^^xsd:int ;
+	nbam:point_home_movement "0"^^xsd:int ;
+	nbam:result "made" .
+
+<http://NBAMovements.com/resource/person/player/jrue-holiday> a nbam:Player ;
+	foaf:name "Jrue Holiday" ;
+	nbam:realizes_a "turnover" ;
+	nbam:plays_in <http://NBAMovements.com/resource/sportsTeam/nop> ;
+	nbam:plays_a <http://nbamovements.com/resource/match/0021400001> .
+
+<http://NBAMovements.com/resource/movement/00214000015> nbam:has_a_duration "Tue Oct 28 00:11:18 CET 2014"^^xsd:dateTime ;
+	<http://NBAMovements.com/name> "turnover" ;
+	nbam:is_made_by <http://NBAMovements.com/resource/person/player/jrue-holiday> ;
+	<http://NBAMovements.com/is_made> <http://nbamovements.com/resource/match/0021400001> ;
+	nbam:points_away_movement "2"^^xsd:int ;
+	nbam:point_home_movement "0"^^xsd:int .
+
+<http://NBAMovements.com/resource/person/player/evan-fournier> nbam:realizes_a "turnover" .
+
+<http://NBAMovements.com/resource/movement/00214000016> nbam:has_a_duration "Tue Oct 28 00:11:18 CET 2014"^^xsd:dateTime ;
+	<http://NBAMovements.com/name> "turnover" ;
+	nbam:is_made_by <http://NBAMovements.com/resource/person/player/evan-fournier> ;
+	<http://NBAMovements.com/is_made> <http://nbamovements.com/resource/match/0021400001> ;
+	nbam:points_away_movement "2"^^xsd:int ;
+	nbam:point_home_movement "0"^^xsd:int .
+
+<http://NBAMovements.com/resource/movement/00214000017> nbam:distance "18"^^xsd:int ;
+	nbam:has_a_duration "Tue Oct 28 00:11:06 CET 2014"^^xsd:dateTime ;
+	<http://NBAMovements.com/name> "miss" ;
+	nbam:is_made_by <http://NBAMovements.com/resource/person/player/anthony-davis> ;
+	<http://NBAMovements.com/is_made> <http://nbamovements.com/resource/match/0021400001> ;
+	nbam:points_away_movement "2"^^xsd:int ;
+	nbam:point_home_movement "0"^^xsd:int ;
+	nbam:result "missed" .
